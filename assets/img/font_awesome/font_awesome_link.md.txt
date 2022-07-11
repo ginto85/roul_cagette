@@ -1,0 +1,53 @@
+
+carte +pointer
+<i class="fas fa-map-marked-alt"></i>
+
+camion de livraison
+<i class="fas fa-truck"></i>
+
+panier 
+<i class="fas fa-shopping-basket"></i>
+
+
+logo fraicheur
+
+
+
+logo reseau sociaux
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-pinterest-p"></i>
+
+
+email
+<i class="fas fa-envelope-square"></i>
+
+
+
+producteur label rouge et agriculture biologique:
+
+Romain Duret
+La ferme de Poeuilly 
+producteur de viandes
+poulet, veau, boeuf
+
+description:
+
+
+
+
+Guillaume Menuet
+Le Gaec de la Vieille Grange 
+Producteur de porc élevée en plein air
+
+description:
+
+
+
+
+
+Lolita Bossard
+La ferme de Rimbercourt 
+maraîchaire legumes et fruits
+
+description:

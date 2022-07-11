@@ -1,0 +1,332 @@
+/*************  MOBILE FIRST 440PX *****************/
+
+/***********************/
+/********HEADER********/
+/***********************/
+
+header {
+    font-size:1.8rem;
+   
+    background: radial-gradient(circle, $bchead-color 0%, $bcheadrad-color),
+        no-repeat center/100%  url("../img/producers/apple_trees.jpg");
+   
+    .logo{
+         /******** LOGO *********/
+        padding: 8rem 3rem 0 3rem;
+    }
+
+    div .head-nav{
+        /*******DISPLAY MENU ********/
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        min-height:8vh;
+        
+    }
+
+    div .basket i{
+        padding-right:1rem;
+    }
+    div nav .burger{
+        /******** BURGER MENU ********/
+        @include nav-burger;
+
+        margin: nth($margin,2);
+        
+    }
+    div nav .burger div{
+        background-color:$bcg-menu-dash;
+        width:4rem;
+        height:0.5rem;
+        margin: 0.5rem auto ;
+        box-shadow:$shadow-box-nav-dash;
+    }
+    .dspno{
+        display:inline;
+    }
+    div nav ul {
+        list-style-type: none;
+        display:none;
+        padding:0;
+        
+        li{
+            @include nav-burger;
+
+            margin: 1rem 3rem ;
+           
+            
+            text-transform:uppercase;
+            letter-spacing:0.2rem;
+
+            &:hover{
+                background-color:$bcg-color-hover;
+            }
+        }
+        
+    }
+
+    .label {
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        margin:nth($margin,1);
+     
+        img{
+            width:20%;
+            margin:nth($margin, 1);
+            
+            &:first-child{
+                width:30%;
+            }
+        }
+    
+    }
+
+    div .basket{
+        background: no-repeat center/80% url('../img/ardoise_basket.png');
+        width:25rem;
+        height:17rem;
+        padding-top:nth($padding-top,7);
+        font-size:2.5rem;
+        position:fixed;
+        top:-5rem;
+        right: 0;
+        z-index:900;
+
+        i{
+            color:$title1-color;
+        }
+        span{
+
+            @include headerShopCart;
+           
+        }
+        a{
+            @include headerShopCart;
+            line-height: 2rem;
+            margin: nth($margin,2);
+            p {
+                margin:0 0 0.5rem;
+            }
+        }        
+    }
+
+}
+ /******************************/
+   /******** DESCRIPTION  ********/
+           /*PAGE FOOTER*/
+   /******************************/
+
+   Footer{
+    background: radial-gradient(circle, $bchead-color 0%, $bcheadrad-color);
+    
+    font-family:"homemade Apple";
+    color:$para-foot-color;
+
+    div{
+        .board{
+            background: no-repeat center/80% url('../img/ardoise3footer.png') ;
+            background-size: 120% 120%;
+            height:40rem;
+            border-radius:1rem;
+            box-shadow: $box-shadow-foot;
+            
+
+            ul{
+                list-style-type: none;
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: space-around;
+               
+                padding: 3rem 0 0 0;
+                
+                font-size:1.4rem;
+                
+                li{
+                    width:100%;
+                    display:flex;
+                    flex-direction:column;
+                    padding:1rem 2rem;
+                    &:first-child{
+                        padding-top:2rem;
+                    }
+                    i{
+                        font-size: x-large;
+                    }
+
+                    span{
+                        padding:1rem 0;
+                    }
+
+                }
+            }
+        }
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    .contact ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        line-height:4rem;
+        li{
+            display:flex;
+            flex-direction:column;
+            padding:nth($padding,1);
+
+            &:nth-child(2) a{
+                padding-top: 1.5rem;
+            }
+
+            i{
+                font-size: xx-large;
+            }
+            
+            p{
+                font-size:1.8rem;
+            }
+            a{
+                font-size:1.8rem;
+            }
+        }
+        padding: 0;
+    }
+
+    iframe{
+        width:80%;
+        height:30rem;
+    }
+
+}
+
+@media screen and (min-width:768px){
+
+    /*************************/
+    /****** HEADER  **********/
+    /************************/ 
+    
+    
+    
+    header{
+
+        div{
+            nav{ 
+                .burger{
+                    display:none;
+                }
+                ul {
+                    display:inline;
+                }
+            }
+
+            .head-nav{
+                flex-direction:row;
+                align-items:flex-end;
+
+                nav {
+                    padding-top:16rem;
+                }
+
+                .logo{
+                    float:left;
+                    width:70%;
+                }
+            }
+            .basket{
+                width:23rem;
+                height:12rem;
+                padding:8rem 0 2rem 0;
+                a{
+                    font-size:nth($font-size,3);
+                    margin:0;
+                }
+                p{
+                    font-size:nth($font-size,3);
+                    
+                }
+                span{
+                    font-size:nth($font-size,3);
+                }
+            }
+
+        }
+
+
+        .logo{
+            padding: 0;
+        }
+    }  
+}  
+
+@media screen and (min-width:960px){
+    
+    header{
+        div{
+            .head-nav{
+                align-items:center;
+
+                .logo a img{
+                    padding-top:3rem;
+                }
+            }
+
+            .basket{
+
+                width:37rem;
+                height:18rem;
+
+                p{
+                    font-size:4rem;
+                    line-height:5rem;
+                }
+                span{
+                    font-size:4rem;
+                    line-height:5rem;
+                }
+                i{
+                    font-size:4rem;
+                    line-height:5rem;
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media screen and (min-width:960px){
+    
+    header{
+        div{
+            .head-nav{
+                align-items:center;
+
+                .logo a img{
+                    padding-top:3rem;
+                }
+            }
+
+            .basket{
+
+                width:37rem;
+                height:18rem;
+
+                p{
+                    font-size:4rem;
+                    line-height:5rem;
+                }
+                span{
+                    font-size:4rem;
+                    line-height:5rem;
+                }
+                i{
+                    font-size:4rem;
+                    line-height:5rem;
+                }
+            }
+            
+        }
+    }
+}

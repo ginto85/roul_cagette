@@ -1,0 +1,26 @@
+/******************************/
+/******** DESCRIPTION  ********/
+      /*PAGE PRODUCERS*/
+/******************************/
+section {
+
+    .producers{
+        h2{
+            font-family:'Open Sans', sans-serif;
+            color:$word-color;
+            padding-top:nth($padding-top,2);
+        }
+        p {
+            text-align:justify;
+        }
+    }
+
+}
+
+@media screen and (min-width:960px){
+
+    section .producers p{
+        line-height:3rem;
+    }
+
+}

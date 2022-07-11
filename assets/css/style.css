@@ -1,0 +1,971 @@
+/************TOOL**************/
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+a {
+  text-decoration: none;
+  color: #353434;
+  font-weight: 700;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+html body {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: auto;
+  line-height: 2rem;
+  background-color: #627171;
+  color: #353434;
+}
+html body img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+html body .container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/*************  MOBILE FIRST 440PX *****************/
+/***********************/
+/********HEADER********/
+/***********************/
+header {
+  font-size: 1.8rem;
+  background: radial-gradient(circle, rgba(187, 251, 63, 0.7119222689) 0%, rgba(223, 252, 70, 0.1516981793) 100%), no-repeat center/100% url("../img/producers/apple_trees.jpg");
+}
+header .logo {
+  /******** LOGO *********/
+  padding: 8rem 3rem 0 3rem;
+}
+header div .head-nav {
+  /*******DISPLAY MENU ********/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 8vh;
+}
+header div .basket i {
+  padding-right: 1rem;
+}
+header div nav .burger {
+  /******** BURGER MENU ********/
+  padding: 1rem;
+  background-color: #c2f165;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+  margin: 2rem;
+}
+header div nav .burger div {
+  background-color: #a8e07d;
+  width: 4rem;
+  height: 0.5rem;
+  margin: 0.5rem auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2);
+}
+header .dspno {
+  display: inline;
+}
+header div nav ul {
+  list-style-type: none;
+  display: none;
+  padding: 0;
+}
+header div nav ul li {
+  padding: 1rem;
+  background-color: #c2f165;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+  margin: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+header div nav ul li:hover {
+  background-color: #7a924c;
+}
+header .label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+header .label img {
+  width: 20%;
+  margin: 1rem;
+}
+header .label img:first-child {
+  width: 30%;
+}
+header div .basket {
+  background: no-repeat center/80% url("../img/ardoise_basket.png");
+  width: 25rem;
+  height: 17rem;
+  padding-top: 7rem;
+  font-size: 2.5rem;
+  position: fixed;
+  top: -5rem;
+  right: 0;
+  z-index: 900;
+}
+header div .basket i {
+  color: #fefefe;
+}
+header div .basket span {
+  font-family: "Homemade apple", sans-serif;
+  font-size: 3rem;
+  color: #fefefe;
+}
+header div .basket a {
+  font-family: "Homemade apple", sans-serif;
+  font-size: 3rem;
+  color: #fefefe;
+  line-height: 2rem;
+  margin: 2rem;
+}
+header div .basket a p {
+  margin: 0 0 0.5rem;
+}
+
+/******************************/
+/******** DESCRIPTION  ********/
+/*PAGE FOOTER*/
+/******************************/
+Footer {
+  background: radial-gradient(circle, rgba(187, 251, 63, 0.7119222689) 0%, rgba(223, 252, 70, 0.1516981793) 100%);
+  font-family: "homemade Apple";
+  color: #fefefe;
+}
+Footer div .board {
+  background: no-repeat center/80% url("../img/ardoise3footer.png");
+  background-size: 120% 120%;
+  height: 40rem;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 5px 5px #353434;
+}
+Footer div .board ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 0 0 0;
+  font-size: 1.4rem;
+}
+Footer div .board ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+Footer div .board ul li:first-child {
+  padding-top: 2rem;
+}
+Footer div .board ul li i {
+  font-size: x-large;
+}
+Footer div .board ul li span {
+  padding: 1rem 0;
+}
+Footer div ul {
+  list-style-type: none;
+}
+Footer .contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  line-height: 4rem;
+  padding: 0;
+}
+Footer .contact ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+Footer .contact ul li:nth-child(2) a {
+  padding-top: 1.5rem;
+}
+Footer .contact ul li i {
+  font-size: xx-large;
+}
+Footer .contact ul li p {
+  font-size: 1.8rem;
+}
+Footer .contact ul li a {
+  font-size: 1.8rem;
+}
+Footer iframe {
+  width: 80%;
+  height: 30rem;
+}
+
+@media screen and (min-width: 768px) {
+  /*************************/
+  /****** HEADER  **********/
+  /************************/
+  header div nav .burger {
+    display: none;
+  }
+  header div nav ul {
+    display: inline;
+  }
+  header div .head-nav {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  header div .head-nav nav {
+    padding-top: 16rem;
+  }
+  header div .head-nav .logo {
+    float: left;
+    width: 70%;
+  }
+  header div .basket {
+    width: 23rem;
+    height: 12rem;
+    padding: 8rem 0 2rem 0;
+  }
+  header div .basket a {
+    font-size: 3rem;
+    margin: 0;
+  }
+  header div .basket p {
+    font-size: 3rem;
+  }
+  header div .basket span {
+    font-size: 3rem;
+  }
+  header .logo {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  header div .head-nav {
+    align-items: center;
+  }
+  header div .head-nav .logo a img {
+    padding-top: 3rem;
+  }
+  header div .basket {
+    width: 37rem;
+    height: 18rem;
+  }
+  header div .basket p {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  header div .basket span {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  header div .basket i {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  header div .head-nav {
+    align-items: center;
+  }
+  header div .head-nav .logo a img {
+    padding-top: 3rem;
+  }
+  header div .basket {
+    width: 37rem;
+    height: 18rem;
+  }
+  header div .basket p {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  header div .basket span {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  header div .basket i {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+/*************************/
+/********  LINK CLASS = DETAILS ********/
+/*************************/
+section .details {
+  padding: 1rem;
+  background-color: #c2f165;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+  margin: 2rem;
+}
+section a.details.factureByOrder {
+  margin: 0;
+}
+section article .select {
+  padding-top: 2rem;
+  font-size: 1.8rem;
+}
+section article .mandatory {
+  padding-top: 2rem;
+  font-size: 1.8rem;
+}
+section article abbr {
+  color: #e01818;
+}
+section article form {
+  margin: 0 7rem;
+}
+
+/*************************/
+/******** DESCRIPTION SECTION ********/
+/*************************/
+section h1 {
+  color: #fefefe;
+  font-size: 3.5rem;
+  font-family: "homemade Apple", sans-serif;
+  margin: 0.5rem;
+  padding: 2rem 0 0 0;
+}
+section h2 {
+  padding: 2rem 0 0 0;
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+section h3 {
+  color: #fefefe;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  font-family: "homemade Apple", sans-serif;
+}
+section article {
+  background-color: #eee;
+  padding-bottom: 2rem;
+}
+section article div p {
+  padding: 0 2rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+section article div p strong, section article div p em {
+  color: #627171;
+}
+
+@media screen and (min-width: 768px) {
+  section .home div div img {
+    width: 49%;
+    float: left;
+    padding: 0 2rem 2.5rem 2rem;
+  }
+  section .home div p {
+    line-height: 4rem;
+  }
+
+  section .home .clear {
+    clear: both;
+  }
+
+  section .home #description p {
+    line-height: 3rem;
+  }
+}
+/****************************/
+/******** DESCRIPTION SECTION ********/
+/******** LOGIN & REGISTER **********/
+/***************************/
+section article .connect-form label {
+  display: block;
+  position: relative;
+  padding: 1rem;
+}
+section article .connect-form p input {
+  padding: 1rem;
+  background-color: #c2f165;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+}
+section article .connect ul {
+  list-style: none;
+}
+section article a {
+  padding: 1rem;
+  background-color: #c2f165;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+}
+section .register ul {
+  list-style: none;
+  color: #e01818;
+}
+section .connect ul {
+  color: #e01818;
+}
+
+/******************************/
+/******** DESCRIPTION  ********/
+/*PAGE PRODUCERS*/
+/******************************/
+section .producers h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #627171;
+  padding-top: 2rem;
+}
+section .producers p {
+  text-align: justify;
+}
+
+@media screen and (min-width: 960px) {
+  section .producers p {
+    line-height: 3rem;
+  }
+}
+/******************************/
+/******** DESCRIPTION  ********/
+/*PAGE REGISTER*/
+/******************************/
+section .spacing-bottom {
+  line-height: 3.5rem;
+}
+
+/************************/
+/*MODAL OF PAGE PRODUCTS 
+    and DELIVERYPOINT   */
+/************************/
+section .modal {
+  text-align: center;
+  padding: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 160px;
+  border-radius: 1.3rem;
+  background: #eeeeee;
+  color: #353434;
+  border: 1px solid #627171;
+  font-size: 3rem;
+  z-index: 100;
+  border: 1px solid #627171;
+}
+section .modal p {
+  line-height: 3rem;
+  margin: 0.8rem;
+  color: #d60617;
+}
+section .modal button {
+  padding: 1rem;
+  background-color: #c2f165;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+  margin: auto;
+  width: 80px;
+  color: #111;
+  outline: none;
+  cursor: pointer;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  /******************************/
+  /* modal */
+  /******************************/
+  section .displayModal {
+    display: none;
+  }
+  section .modal {
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 160px;
+    border-radius: 1.3rem;
+    background: #eeeeee;
+    color: #353434;
+    border: 1px solid #627171;
+    font-size: 3rem;
+    z-index: 100;
+  }
+  section .modal p {
+    line-height: 3rem;
+    margin: 0;
+  }
+  section .modal button {
+    margin: auto;
+    width: 80px;
+    color: #111;
+    outline: none;
+    cursor: pointer;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #c2f165;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+    padding: 0.8rem;
+  }
+}
+/******************************/
+/******** DESCRIPTION  ********/
+/*PAGE PRODUCTS*/
+/******************************/
+section .filter .details {
+  margin: 2.5rem 0.5rem;
+}
+section .prod-ardoise {
+  background: no-repeat center url("../img/ardoise3.png");
+  background-size: 114% 71%;
+  height: 29em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fefefe;
+}
+section .prod-ardoise h3 {
+  margin-bottom: 1rem;
+}
+section .prod-ardoise p {
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  width: 70%;
+  line-height: 3.5rem;
+  margin: 0 auto;
+}
+section .prod-ardoise span {
+  font-size: 4rem;
+  font-family: "homemade Apple";
+  padding: 1rem 0;
+}
+section .products h2 {
+  padding: 0;
+  line-height: 4rem;
+}
+section .products img {
+  min-width: 35rem;
+}
+section .products em {
+  color: #a5c760;
+}
+
+@media screen and (min-width: 768px) {
+  section .modal button:hover {
+    background-color: #7a924c;
+    cursor: pointer;
+  }
+  section .choice {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section .choice button:hover {
+    background-color: #7a924c;
+    cursor: pointer;
+  }
+  section .choice .products {
+    width: 48%;
+    margin: 1rem auto;
+  }
+  section .choice .products div div img {
+    margin: 2rem 0;
+    width: 35rem;
+    height: 29rem;
+  }
+  section .choice .products div .prod-ardoise {
+    height: 45rem;
+  }
+  section div.filter button:hover {
+    background-color: #7a924c;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 960px) {
+  section .prod-ardoise {
+    height: 31rem;
+  }
+  section .choice .products {
+    width: 31%;
+    margin: 1rem auto;
+  }
+  section .choice .products h3 {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+  section .choice .products p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  section .choice .products span {
+    font-size: 2.5rem;
+  }
+  section .choice .products div {
+    display: flex;
+    flex-direction: column;
+  }
+  section .choice .products div div img {
+    min-width: 29rem;
+    height: 22rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+/*************************/
+/******** DESCRIPTION  ********/
+/*    PAGE SHOPPINGCART  */
+/*************************/
+section .titleShopKart {
+  padding: 2rem 0;
+}
+section .shoppingcart {
+  padding-top: 4rem;
+}
+section .shoppingcart div#filledcard {
+  display: flex;
+  flex-direction: column;
+}
+section .shoppingcart div#filledcard table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+section .shoppingcart div#filledcard table td, section .shoppingcart div#filledcard article .updateAdmin table tr, section article .updateAdmin .shoppingcart div#filledcard table tr, section .shoppingcart div#filledcard table th {
+  border: 1px solid #627171;
+  padding: 0.5rem;
+  text-align: left;
+  width: 180px;
+  height: 6rem;
+}
+section .shoppingcart div#filledcard table th {
+  background-color: #ebe3db;
+  opacity: 0.7;
+  font-weight: bold;
+}
+section .shoppingcart .deliveryPoint ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+section .shoppingcart .deliveryPoint ul li {
+  width: 40%;
+  color: #353434;
+  border: 1px solid #353434;
+  margin: 1rem;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+}
+section .shoppingcart .deliveryPoint ul .colorDelivery {
+  background-color: #78a3d8;
+}
+section #totalAmount {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/*************************/
+/******** DESCRIPTION  ********/
+/*    PAGE ORDER  */
+/*************************/
+section .order div#filledcard {
+  display: flex;
+  flex-direction: column;
+}
+section .order div#filledcard table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+section .order div#filledcard td, section .order div#filledcard article .updateAdmin table tr, section article .updateAdmin table .order div#filledcard tr, section .order div#filledcard th, section .order .shoppingcart div#filledcard table th, section .shoppingcart .order div#filledcard table th {
+  border: 1px solid #627171;
+  padding: 0.5rem;
+  text-align: left;
+  width: 180px;
+  height: 6rem;
+}
+section .order div#filledcard th {
+  background-color: #ebe3db;
+  opacity: 0.7;
+  font-weight: bold;
+}
+section .order div#filledcard .maplist ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+section .order div#filledcard .maplist ul li {
+  width: 30%;
+  font-size: 1.2rem;
+}
+section .order div#filledcard .maplist ul li p {
+  line-height: 2rem;
+  margin: 0;
+  font-size: 1.2rem;
+}
+section .order div#filledcard .maplist ul li p:first-child {
+  font-weight: 700;
+}
+section .order div#filledcard .maplist ul li span {
+  font-weight: 700;
+  display: block;
+}
+section .order div#filledcard .details {
+  margin: 0;
+}
+section .order div#filledcard .order #mapid {
+  width: 100%;
+  height: 400px;
+  z-index: 90;
+  margin-bottom: 3rem;
+}
+section .order div#filledcard .order #mapid a {
+  display: none;
+}
+section .order div#filledcard .order .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+}
+section .order div#filledcard .order a {
+  margin: 1rem;
+}
+section .order div#filledcard .order .maps iframe {
+  margin: auto;
+}
+section .order div#filledcard .order #make-order-detail {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .order .button {
+    display: block;
+  }
+  .order #mapid {
+    height: 45rem;
+  }
+  .order .maplist ul li {
+    width: 100%;
+    border: 1px solid #353434;
+    margin: 1rem 2rem;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 255, 0.2);
+  }
+  .order .maplist ul li p {
+    font-size: 1.8rem;
+  }
+  .order .maplist ul li span {
+    font-size: 1.8rem;
+  }
+  .order .maplist ul li button {
+    font-size: 1.8rem;
+  }
+}
+/******************************/
+/*        PAGE ADMIN  IN DASHBOARD    */
+/******************************/
+/* ADD PRODUCT */
+section article .addProduct-form {
+  border: 1px solid #627171;
+  margin: 1rem;
+  line-height: 3rem;
+}
+section article .addProduct-form form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*REMOVE PRODUCT  IN DASHBOARD   */
+section article .updateAdmin table {
+  margin: 0 auto;
+  line-height: 5rem;
+  border-collapse: collapse;
+}
+section article .updateAdmin table td, section article .updateAdmin table tr, section article .updateAdmin table tr th, section article .updateAdmin table td th, section article .updateAdmin .shoppingcart div#filledcard table th, section .shoppingcart div#filledcard article .updateAdmin table th, section article .updateAdmin table .order div#filledcard th, section .order div#filledcard article .updateAdmin table th {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+section article .removeAdmin table {
+  margin: 0 auto;
+  line-height: 5rem;
+  border-collapse: collapse;
+}
+section article .removeAdmin table td, section article .removeAdmin .shoppingcart div#filledcard table th, section .shoppingcart div#filledcard article .removeAdmin table th, section article .removeAdmin table .order div#filledcard th, section .order div#filledcard article .removeAdmin table th, section article .removeAdmin .updateAdmin table td th, section article .updateAdmin .removeAdmin table td th, section article .updateAdmin .shoppingcart div#filledcard .removeAdmin table th th, section article .removeAdmin .updateAdmin table tr, section article .updateAdmin .removeAdmin table tr, section article .removeAdmin .updateAdmin table tr th, section article .updateAdmin .removeAdmin table tr th {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+section article .removeAdmin table td th, section article .removeAdmin .shoppingcart div#filledcard table th th, section .shoppingcart div#filledcard article .removeAdmin table th th, section article .removeAdmin table .order div#filledcard th th, section .order div#filledcard article .removeAdmin table th th, section article .updateAdmin .shoppingcart div#filledcard .removeAdmin table th th th, section article .removeAdmin .updateAdmin table tr th, section article .updateAdmin .removeAdmin table tr th {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+section article .removeAdmin table tr {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+section article .removeAdmin table tr th {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+
+/*UPDATE PRODUCT  IN DASHBOARD   */
+section article.update div div {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* ORDERLIST IN DASHBOARD      */
+section .orderListAdmin {
+  padding-top: 2rem;
+}
+section .orderListAdmin table {
+  width: 90%;
+  margin: auto;
+  line-height: 5rem;
+  border-collapse: collapse;
+}
+section .orderListAdmin table td, section .orderListAdmin .shoppingcart div#filledcard table th, section .shoppingcart div#filledcard .orderListAdmin table th, section .orderListAdmin table .order div#filledcard th, section .order div#filledcard .orderListAdmin table th, section .orderListAdmin article .updateAdmin table td th, section article .updateAdmin .orderListAdmin table td th, section .orderListAdmin .order div#filledcard article .updateAdmin table th th, section .orderListAdmin article .updateAdmin table tr, section article .updateAdmin .orderListAdmin table tr, section .orderListAdmin article .updateAdmin table tr th, section article .updateAdmin .orderListAdmin table tr th {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+section .orderListAdmin table td form, section .orderListAdmin .shoppingcart div#filledcard table th form, section .shoppingcart div#filledcard .orderListAdmin table th form, section .orderListAdmin table .order div#filledcard th form, section .order div#filledcard .orderListAdmin table th form, section .orderListAdmin article .updateAdmin table td th form, section article .updateAdmin .orderListAdmin table td th form, section .orderListAdmin .order div#filledcard article .updateAdmin table th th form, section .orderListAdmin article .updateAdmin table tr form, section article .updateAdmin .orderListAdmin table tr form {
+  margin: 0;
+}
+section .orderListAdmin table td th, section .orderListAdmin .shoppingcart div#filledcard table th th, section .shoppingcart div#filledcard .orderListAdmin table th th, section .orderListAdmin table .order div#filledcard th th, section .order div#filledcard .orderListAdmin table th th, section .orderListAdmin article .updateAdmin table td th th, section article .updateAdmin .orderListAdmin table td th th, section .orderListAdmin .order div#filledcard article .updateAdmin table th th th, section .orderListAdmin article .updateAdmin table tr th, section article .updateAdmin .orderListAdmin table tr th {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+section .orderListAdmin table tr {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+section .orderListAdmin table tr th {
+  border: 1px solid #627171;
+  width: 11rem;
+  height: 6rem;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  section article .removeAdmin tr {
+    width: 18rem;
+  }
+  section article .removeAdmin tr th {
+    width: 18rem;
+  }
+  section article .removeAdmin td, section article .removeAdmin .shoppingcart div#filledcard table th, section .shoppingcart div#filledcard table article .removeAdmin th, section article .removeAdmin .order div#filledcard th, section .order div#filledcard article .removeAdmin th, section article .removeAdmin .updateAdmin table td th, section article .updateAdmin table td .removeAdmin th, section article .updateAdmin .shoppingcart div#filledcard table th .removeAdmin th, section .shoppingcart div#filledcard article .removeAdmin .updateAdmin table th th, section .shoppingcart div#filledcard article .updateAdmin table th .removeAdmin th, section article .updateAdmin table .order div#filledcard th .removeAdmin th, section article .removeAdmin .updateAdmin table tr, section article .updateAdmin table .removeAdmin tr, section article .removeAdmin .updateAdmin table tr th, section article .updateAdmin table tr .removeAdmin th {
+    width: 18rem;
+  }
+  section article .removeAdmin td th, section article .removeAdmin .shoppingcart div#filledcard table th th, section .shoppingcart div#filledcard table article .removeAdmin th th, section article .removeAdmin .order div#filledcard th th, section .order div#filledcard article .removeAdmin th th, section article .removeAdmin .updateAdmin table td th th, section article .updateAdmin table td .removeAdmin th th, section article .updateAdmin .shoppingcart div#filledcard table th .removeAdmin th th, section .shoppingcart div#filledcard article .removeAdmin .updateAdmin table th th th, section .shoppingcart div#filledcard article .updateAdmin table th .removeAdmin th th, section article .updateAdmin table .order div#filledcard th .removeAdmin th th, section article .removeAdmin .updateAdmin table tr th, section article .updateAdmin table .removeAdmin tr th, section article .updateAdmin table tr .removeAdmin th th {
+    width: 18rem;
+  }
+  section article .updateAdmin tr {
+    width: 18rem;
+  }
+  section article .updateAdmin tr th {
+    width: 18rem;
+  }
+  section article .updateAdmin td, section article .updateAdmin .shoppingcart div#filledcard table th, section .shoppingcart div#filledcard table article .updateAdmin th, section article .updateAdmin .order div#filledcard th, section .order div#filledcard article .updateAdmin th, section article .updateAdmin table td th, section .shoppingcart div#filledcard article .updateAdmin table th th, section article .updateAdmin table tr, section article .updateAdmin table tr th {
+    width: 18rem;
+  }
+  section article .updateAdmin td th, section article .updateAdmin .shoppingcart div#filledcard table th th, section .shoppingcart div#filledcard table article .updateAdmin th th, section article .updateAdmin .order div#filledcard th th, section .order div#filledcard article .updateAdmin th th, section article .updateAdmin table td th th, section .shoppingcart div#filledcard article .updateAdmin table th th th, section article .updateAdmin table tr th {
+    width: 18rem;
+  }
+  section article.update form {
+    border: 1px solid #353434;
+  }
+  section article.update div div {
+    width: 50%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  section article .removeAdmin table {
+    width: 90%;
+  }
+}
+/******************************/
+/*        PAGE paiement        */
+/******************************/
+section #paiement-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #627171;
+  background-color: #aba8a8;
+}
+section #paiement-form input {
+  line-height: 2.5rem;
+  margin: 1rem;
+}
+section #paiement-form button {
+  line-height: 2.5rem;
+  margin: 1rem;
+  background-color: #c2f165;
+}
+
+#form-paiement {
+  background-color: #eeeeee;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  section #paiement-form {
+    width: 50%;
+  }
+}
+/******************************/
+/*        PAGE SUCCESS        */
+/******************************/
+.success div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.success div a {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .success div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 960px) {
+  /******************************/
+  /*        PAGE SUCCESS        */
+  /******************************/
+  .success div {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

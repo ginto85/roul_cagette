@@ -1,0 +1,66 @@
+    /*************************/
+    /******** DESCRIPTION SECTION ********/
+        /*************************/
+          
+section{
+    h1{
+        color:$title1-color;
+        font-size:$size-title-1;
+        font-family:'homemade Apple', sans-serif;
+        margin : 0.5rem ;
+        padding:nth($padding,2) 0 0 0 ;
+        
+        
+    }
+    
+    h2{
+        padding:nth($padding,2) 0 0 0 ;
+        font-size:$size-title-2;
+        line-height: 3rem;
+    }
+    
+    h3 {
+        color:$title1-color;
+        font-size:$size-title-3;
+        line-height:3rem;
+        font-family:'homemade Apple', sans-serif;
+    }
+    
+    article{
+        background-color: #eee;
+        padding-bottom:nth($padding-bottom,2);
+
+        div p {
+            padding: 0 nth($padding,2);
+            font-size:1.8rem;
+            line-height:3rem;
+            strong, em {
+                color:$word-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    section .home div {
+        
+        div img{
+            width: 49%;
+            float:left;
+            padding: 0 2rem 2.5rem 2rem;
+        }
+        p {
+            line-height:4rem;
+        }
+    }
+
+    section .home .clear{
+        clear:both;
+    }
+
+    section .home #description p{
+        line-height:3rem;
+    }
+
+
+}

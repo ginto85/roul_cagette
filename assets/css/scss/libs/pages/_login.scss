@@ -1,0 +1,37 @@
+  /****************************/
+/******** DESCRIPTION SECTION ********/
+/******** LOGIN & REGISTER **********/
+    /***************************/
+
+    section{
+        article{
+            .connect-form{
+                label {
+                    display:block;
+                    position :relative;
+                    padding: nth($padding, 1);
+                }
+                p input{
+                    @include nav-burger;
+                }
+            }
+            .connect ul {
+                list-style:none;
+            }
+    
+            a{
+                @include nav-burger;
+            }
+    
+        }
+        .register ul{
+            list-style:none;
+            color: $abbr-color;
+        }
+        .connect ul {
+            color:$abbr-color;
+        }
+    
+    
+    }
+    

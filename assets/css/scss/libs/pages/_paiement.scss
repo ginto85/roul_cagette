@@ -1,0 +1,37 @@
+
+
+/******************************/
+/*        PAGE paiement        */
+/******************************/
+
+section #paiement-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin:auto;
+    border:$border-admin-ad-prod;
+    background-color: $bcg-paiement-form;
+
+    input{
+        line-height:2.5rem ;
+        margin:nth($margin,1);
+    }
+    button{
+        line-height:2.5rem ;
+        margin:nth($margin,1);
+        background-color: $bcg-link-color;
+    }
+
+}
+#form-paiement{
+    background-color: $bcg-modal;
+    padding:nth($padding,1);
+    margin:nth($margin,1);
+}
+@media screen and (min-width:768px){
+
+    section #paiement-form{
+        width: 50%;
+     }
+
+}

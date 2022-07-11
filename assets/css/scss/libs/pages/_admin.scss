@@ -1,0 +1,164 @@
+
+/******************************/
+/*        PAGE ADMIN  IN DASHBOARD    */
+/******************************/
+
+/* ADD PRODUCT */
+section article .addProduct-form {
+    border:$border-admin-ad-prod;
+    margin: nth($margin,1);
+    line-height: 3rem;
+
+    form div{
+        display:flex;    
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*REMOVE PRODUCT  IN DASHBOARD   */
+
+
+section article {
+    .updateAdmin {
+        table{
+            margin:0 auto;
+            line-height:5rem;
+            border-collapse: collapse;
+            td{
+                @include tableAdminBoard;
+                th{
+                    @extend td;
+                }
+
+            }
+            tr{
+                @extend td;
+                th{
+                    @extend td;
+                 }
+            }
+        }
+    }
+    .removeAdmin{
+        table {
+            margin:0 auto;
+            line-height:5rem;
+            border-collapse: collapse;
+          
+            td{
+                @include tableAdminBoard;
+                th{
+                    @include tableAdminBoard;
+                }
+            }
+        
+            tr{
+                @include tableAdminBoard;
+                th{
+                    @include tableAdminBoard;
+                }
+            }
+        }
+    } 
+}
+
+
+
+      /*UPDATE PRODUCT  IN DASHBOARD   */
+
+
+section article.update div div {
+    padding: nth($padding, 1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+
+
+      /* ORDERLIST IN DASHBOARD      */
+
+section .orderListAdmin{
+    padding-top: nth($padding-top, 2);
+
+    table{
+        width:90%;
+        margin :auto;
+        line-height:5rem;
+        border-collapse: collapse;
+        td{
+            @include tableAdminBoard;
+            form{
+                margin: 0;
+            }
+
+            th{
+                @include tableAdminBoard;
+            }
+        }
+    
+        tr{
+            @include tableAdminBoard;
+
+            th{
+                @include tableAdminBoard;
+            }
+        }
+      
+    }
+}
+
+@media screen and (min-width:768px){
+
+    section {
+        article{
+            .removeAdmin {
+                tr{
+                    width:18rem;
+                    th{
+                        width:18rem;
+                    }
+                }
+                td{
+                    width:18rem;
+                    th{
+                        width:18rem;
+                    }
+                }
+            }
+            .updateAdmin{
+                tr{
+                    width:18rem;
+                    th{
+                        width:18rem;
+                    }
+                }
+                td{
+                    width:18rem;
+                    th{
+                        width:18rem;
+                    }
+                }
+            }
+        }
+        article.update{
+            form{
+            border:1px solid $border2-color;
+            }
+            div div {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:960px){
+
+    section article  .removeAdmin table{
+        width:90%;
+    }
+}

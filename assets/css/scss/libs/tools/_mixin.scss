@@ -1,0 +1,70 @@
+// ====== @mixin 
+
+//shopping Cart
+@mixin headerShopCart{
+    font-family: $font-shopCart;
+    font-size:nth($font-size,3);
+    color:$title1-color;
+}
+
+// nav 
+@mixin nav-burger{
+    padding: nth($padding,1 );
+    background-color: $bcg-link-color;
+    border-radius: 1rem;
+    border:$border-burger-nav;
+    box-shadow: $box-shadow-nav;
+}
+
+@mixin modal{
+
+}
+@mixin tableAdminBoard{
+    border:$border-admin-ad-prod;
+    width : 11rem;
+    height:6rem ;
+    justify-content:center;
+}
+
+@mixin factureByOrder{
+    padding-top:nth($padding-top,2);
+    font-size: 1.8rem;
+}
+
+@mixin modal{
+    text-align: center;
+    padding:  nth($padding, 2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 160px;
+    border-radius: 1.3rem;
+    background: $bcg-modal;
+    color:$paragraph-color;
+    border:1px solid $border1-color;
+    font-size: 3rem;
+    z-index: 100;
+}
+
+@mixin buttonModal{
+    margin: auto;
+    width: 80px;
+    color: $button-color;
+    outline: none;
+    cursor: pointer;
+    margin:nth($margin,2);
+}
+
+@mixin tableDesign{
+    border:$border-admin-ad-prod;
+    padding: 0.5rem;
+    text-align: left;
+    width : 180px;
+    height:6rem ;
+    }
+
+
+
+

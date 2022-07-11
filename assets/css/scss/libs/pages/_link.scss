@@ -1,0 +1,31 @@
+   /*************************/
+ /********  LINK CLASS = DETAILS ********/
+        /*************************/
+
+        section{
+            .details{
+            
+                @include nav-burger;
+            
+               margin:nth($margin, 2);
+           
+           }
+           a.details.factureByOrder{
+               margin : 0;
+           }
+       
+           article{
+               .select {
+                @include factureByOrder;
+               }
+               .mandatory{
+                @include factureByOrder;
+               }
+               abbr{
+                   color: $abbr-color;
+               }
+               form {
+                   margin: 0 7rem;
+               }
+           }
+       }

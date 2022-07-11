@@ -1,0 +1,132 @@
+
+/******************************/
+/******** DESCRIPTION  ********/
+      /*PAGE PRODUCTS*/
+/******************************/
+
+section{
+    .filter .details{
+            margin:2.5rem 0.5rem;
+    }
+    .prod-ardoise {
+
+        background:no-repeat center   url('../img/ardoise3.png');
+        background-size: 114% 71%;
+        height:29em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $para-foot-color;
+        
+        h3{
+            margin-bottom:nth($margin-bottom,1);
+        }
+        p{
+            font-size:2rem;
+            padding:nth($padding,1)  1.5rem;
+            width:70%;
+            line-height:3.5rem;
+            margin :0 auto;
+        }    
+        span{
+            font-size:4rem;
+            font-family:'homemade Apple';
+            padding:nth($padding,1) 0;
+        }
+    }
+
+    .products{
+
+        h2{
+            padding:0;
+            line-height:4rem;
+        }
+
+        img {
+            min-width:35rem;
+        }
+        em{
+            color:$bio-color;
+        }
+
+    }
+    
+
+}
+@media screen and (min-width:768px){
+    section{
+        .modal button:hover{
+            background-color: #7a924c;
+            cursor:pointer;
+        }
+
+        .choice{
+            display:flex;
+            flex-wrap: wrap;
+
+            button:hover{
+                background-color: #7a924c;
+                cursor:pointer;
+            }
+
+            .products{
+                width:48%;
+                margin:nth($margin,1) auto;
+                div{
+                    div img{
+                        margin :nth($margin,2) 0;
+                        width:35rem;
+                        height:29rem;
+                    }
+                    .prod-ardoise {
+                        height:45rem;
+                    }
+                }
+            }
+        }
+
+        div.filter button:hover{
+        background-color: #7a924c;
+        cursor:pointer;
+        }
+    }
+}
+
+@media screen and (min-width:960px){
+
+    section{
+        .prod-ardoise{
+            height:31rem;
+        }
+        
+        .choice .products {
+            width: 31%;
+            margin:nth($margin,1) auto;
+
+            h3{
+                font-size:$size-title-3-prod;
+                line-height:2rem;
+            }
+            p{
+                font-size:$size-text;
+                line-height:2rem;
+            }
+            span{
+                font-size:2.5rem;
+            }
+            div{
+        
+                display:flex;
+                flex-direction:column;
+                div img{
+
+                    min-width:29rem;
+                    height:22rem;
+                    margin:0;
+                    padding:0;
+                }
+            }
+        }
+    }
+
+}
